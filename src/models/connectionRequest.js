@@ -31,8 +31,7 @@ ConnectRequestSchema.pre('save',async function(next){
     const Connectionrequest=this;
 if(Connectionrequest.fromUserId.equals(Connectionrequest.toUserId))
 {
-    throw new Error('You can not send request to yourself');
-  
+    throw new Error('You can not send request to yourself');  
 }});
 
 module.exports={
