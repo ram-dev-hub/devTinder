@@ -1,6 +1,6 @@
 const express=require('express');
 
-const { User } = require('../models/User');
+const { User } = require('../models/userData');
 const {authentication}=require('../middleware/auth');
 const {validateProfileUpdate}=require('../utils/validation')
 
