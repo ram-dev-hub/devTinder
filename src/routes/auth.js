@@ -1,5 +1,5 @@
 const express=require('express');
-const { User } = require('../models/User');
+const { User } = require('../models/userData');
 const bcrypt=require('bcrypt');
 const {authentication}=require('../middleware/auth');
 
